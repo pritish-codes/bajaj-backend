@@ -63,9 +63,9 @@ r := new(req)
 	// Respond with the processed data
 	response := Response{
 		IsSuccess:                true,
-		UserID:                   "john_doe_17091999",
-		Email:                    "john@xyz.com",
-		RollNumber:               "ABCD123",
+		UserID:                   "Pritish_Khera_12052003",
+		Email:                    "pritish.khera2021@vitstudent.ac.in",
+		RollNumber:               "21BCE0664",
 		Numbers:                  numbers,
 		Alphabets:                alphabets,
 		HighestLowercaseAlphabet: highestLowercaseAlphabet,
