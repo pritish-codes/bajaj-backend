@@ -9,6 +9,10 @@ import (
 func main() {
 	// Initialize Fiber
 	app := fiber.New()
+	app.Use(cors.New(cors.Config{
+		AllowOrigins: "*", // Allow all origins, change as per your need
+		AllowMethods: "GET,POST,HEAD,PUT,DELETE,PATCH,OPTIONS",
+	}))
 
 	// Define routes
 	app.Get("/bfhl", routes.GetUser)
