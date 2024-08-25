@@ -31,7 +31,7 @@ func GetUser(c *fiber.Ctx) error {
 }
 
 func PostUser(c *fiber.Ctx) error {
-	r := req{}
+r := new(req)
 	if err := c.BodyParser(r); err != nil {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
 			"is_success": false,
